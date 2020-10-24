@@ -1,129 +1,191 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            /*basic reset */
-            *{
-                margin: 0;
-                padding: 0;
-            }
-            
-            /* Page settings */
-            html {
-                width: 100%;
-                height: 100%;
-                background: radial-gradient(circle, #fff 0%, #aaa 100%) no-repeat;
-                overflow-x: hidden;
-                overflow-y: hidden;
-            }
-            body {
-                text-align: center;
-                display: table;
-                background: black;
-                width: 100%;
-                height: 100%;
-                overflow-x: hidden;
-                overflow-y: hidden;
-            }
+<head>
+<title>Ivan Moreno - Curriculum Vitae</title>
 
-            canvas {display:block;}
-            
-            #author {
-                position: absolute;
-                bottom: 10px;
-                left: 10px;
-                color : #0F0;
-                z-index : 1;
-                box-sizing: border-box;
-                vertical-align: middle;
-            }
+<meta name="viewport" content="width=device-width"/>
+<meta name="description" content="The Curriculum Vitae of Ivan Moreno."/>
+<meta charset="UTF-8"> 
+
+<link type="text/css" rel="stylesheet" href="src/style.css">
+<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body id="top">
+<div id="cv" class="instaFade">
+	<div class="mainDetails">
+		<div id="headshot" class="quickFade">
+			<img src="src/profilePhoto.jpg" alt="Ivan Moreno" />
+		</div>
+		
+		<div id="name">
+			<h1 class="quickFade delayTwo">Ivan Moreno</h1>
+			<h2 class="quickFade delayThree">Communications and</h2>
+			<h2 class="quickFade delayThree">Electronics Engineer</h2>
+		</div>
+		
+		<div id="contactDetails" class="quickFade delayFour">
+			<ul>
+				<li>email: <a href="mailto:ivan1697@gmail.com" target="_blank">ivan1697@gmail.com</a></li>
+				<li>github: <a href="https://github.com/ivanmorenoj">ivanmorenoj</a></li>
+				<li>+52 5560712339</li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+	<div id="mainArea" class="quickFade delayFive">
+		<section>
+			<article>
+				<div class="sectionTitle">
+					<h1>Personal Profile</h1>
+				</div>
+				
+				<div class="sectionContent">
+					<p>I'm communication and electronics engineer with experience in IoT devices, networking and knowledge of DevOps. Tech hobbyist, i like to make electronic projects with arduino and raspberry pi. In my free time i ride in motorcycle.</p>
+				</div>
+			</article>
+			<div class="clear"></div>
+		</section>
+		
+		
+		<section>
+			<div class="sectionTitle">
+				<h1>Experience</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<article>
+					<h2>LoRaWAN system administrator at SEPI ESIME - IPN, Mexico City</h2>
+					<p class="subDetails">January 2020 - Present</p>
+					<p>I work maintaining a kubernetes cluster who manages a LoRaWAN network as part of my master degree project</p>
+				</article>
+				
+				<article>
+					<h2>Specialist in embedded systems at IOPPA (IPN), Mexico City</h2>
+					<p class="subDetails">April 2018 - December 2019</p>
+					<p>I worked in research and development of an air quality monitoring system and i used to manage some linux servers</p>
+				</article>
+			</div>
+			<div class="clear"></div>
+		</section>
+		
+		
+		<section>
+			<div class="sectionTitle">
+				<h1>Key Skills</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<ul class="keySkills">
+					<li>Linux OS</li>
+					<li>Docker</li>
+					<li>Kubernetes</li>
+					<li>Networking</li>
+					<li>Git/GitHub</li>
+					<li>C/C++</li>
+					<li>Python</li>
+					<li>Bash</li>
+					<li>Java</li>
+					<li>IoT</li>
+					<li>LaTex</li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</section>
+		
+		<section>
+			<div class="sectionTitle">
+				<h1>Education</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<article>
+					<h2>SEPI ESIME - IPN, Mexico City</h2>
+					<p class="subDetails">M.Sc. Student</p>
+					<p>Master of Science in Telecommunications Engineering</p>
+				</article>
+				
+				<article>
+					<h2>ESIME - IPN, Mexico City</h2>
+					<p class="subDetails">B.Sc.</p>
+					<p>Communications and Electronics Engineer</p>
+				</article>
+			</div>
+			<div class="clear"></div>
+		</section>
+		
+
+		<section>
+			<div class="sectionTitle">
+				<h1>Projects</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<article>
+          <h2><a href="https://github.com/ivanmorenoj/chirpstack-thingsboard">An IoT LoRaWAN Network</a></h2>
+					<p class="subDetails">2020</p>
+					<p>Implementation of an IoT LoRaWAN Network using Docker, Kubernetes, ChirpStack and ThingsBoard</p>
+				</article>
+				
+				<article>
+          <h2><a href="https://github.com/ivanmorenoj/emca">Air Quality Monitoring Station</a></h2>
+					<p class="subDetails">2019</p>
+					<p>Implementation of an air quality monitoring system with low-cost sensors using a LoRaWAN network</p>
+				</article>
+
+				<article>
+          <h2><a href="https://github.com/ivanmorenoj/fft_esp32_lcd">Spectrum Analyzer</a></h2>
+					<p class="subDetails">2018</p>
+					<p>Shows on a screen the spectrum of the sound captured by a microphone, divided by bands</p>
+				</article>
+
+			</div>
+			<div class="clear"></div>
+		</section>
+
+
+		<section>
+			<div class="sectionTitle">
+				<h1>Training</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<article>
+          <h2><a href="http://ude.my/UC-f0ea1216-1651-4b9c-85a6-c4084c0fe9b7">Certified Kubernetes Administrator (CKA)</a></h2>
+					<p class="subDetails">2020</p>
+				</article>
         
-            span {
-                font-family: monospace;
-                font-size: 1.5em;
-            }
-            span:after {
-                content:" github.com/ivanmorenoj";
-                opacity: 0;
-                animation: cursor 1s infinite;
-            }
-            @keyframes cursor {
-                0% {
-                    opacity: 0;
-                }
-                40% {
-                    opacity: 0;
-                }
-                50% {
-                    opacity: 1;
-                }
-                90% {
-                    opacity: 1;
-                }
-                100% {
-                    opacity: 0;
-                }
-            }
-        
-        </style>
-    </head>
-    <body>
-    
-        <canvas id="c"></canvas>
-        <span id = "author">Ivan Moreno </span>
-        
-        <script>
-        // geting canvas by id c
-        var c = document.getElementById("c");
-        var ctx = c.getContext("2d");
+				<article>
+          <h2><a href="http://ude.my/UC-1867f1ce-607a-4e3d-b7bc-56645b0a6e73">Docker Mastery: with Kubernetes + Swarm</a></h2>
+					<p class="subDetails">2020</p>
+				</article>
+				
+				<article>
+          <h2><a href="http://ude.my/UC-46ac09bd-7e50-4521-ab01-9e193083d462">Red Hat Certified Systems Administrator</a></h2>
+					<p class="subDetails">2020</p>
+				</article>
+				
+			</div>
+			<div class="clear"></div>
+		</section>
+			</div>
+			<div class="clear"></div>
+		</section>
 
-        //making the canvas full screen
-        c.height = window.innerHeight;
-        c.width = window.innerWidth;
-
-        //chinese characters - taken from the unicode charset
-        var matrix = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%";
-        //converting the string into an array of single characters
-        matrix = matrix.split("");
-
-        var font_size = 10;
-        var columns = c.width / font_size; //number of columns for the rain
-        //an array of drops - one per column
-        var drops = [];
-        //x below is the x coordinate
-        //1 = y co-ordinate of the drop(same for every drop initially)
-        for(var x = 0; x < columns; x++)
-            drops[x] = 1; 
-
-        //drawing the characters
-        function draw()
-        {
-            //Black BG for the canvas
-            //translucent BG to show trail
-            ctx.fillStyle = "rgba(0, 0, 0, 0.04)";
-            ctx.fillRect(0, 0, c.width, c.height);
-
-            ctx.fillStyle = "#0F0"; //green text
-            ctx.font = font_size + "px arial";
-            //looping over drops
-            for( var i = 0; i < drops.length; i++ )
-            {
-                //a random chinese character to print
-                var text = matrix[ Math.floor( Math.random() * matrix.length ) ];
-                //x = i*font_size, y = value of drops[i]*font_size
-                ctx.fillText(text, i * font_size, drops[i] * font_size);
-
-                //sending the drop back to the top randomly after it has crossed the screen
-                //adding a randomness to the reset to make the drops scattered on the Y axis
-                if( drops[i] * font_size > c.height && Math.random() > 0.975 )
-                    drops[i] = 0;
-
-                //incrementing Y coordinate
-                drops[i]++;
-            }
-        }
-
-        setInterval( draw, 35 );
-
-        </script>
-    </body>
+	</div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-40569362-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
 </html>
