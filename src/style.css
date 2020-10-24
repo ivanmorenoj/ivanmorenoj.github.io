@@ -15,6 +15,12 @@ html, body {background: #181818; font-family: 'Lato', helvetica, arial, sans-ser
 
 .clear {clear: both;}
 
+a {text-decoration: none;}
+a:link {color: black;}      /* unvisited link */
+a:visited {color: black;}   /* visited link */
+a:hover {color: #cf8a05;}     /* mouse over link */
+a:active {color: black;}    /* selected link */
+
 p {
 	font-size: 1em;
 	line-height: 1.4em;
