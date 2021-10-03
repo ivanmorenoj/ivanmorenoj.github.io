@@ -149,6 +149,14 @@ button:hover,
 .button.button-linkedin:focus {
   filter: brightness(90%) }
 
+/* PayPal */
+.button.button-paypal {
+  color: #FFFFFF;
+  background-color: #0079C1 }
+.button.button-paypal:hover,
+.button.button-paypal:focus {
+  filter: brightness(90%) }
+
 /* Medium */
 .button.button-medium {
   color: #000000;
