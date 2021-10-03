@@ -36,19 +36,17 @@ button {
   display: inline-block;
   text-decoration: none;
   height: 48px;
-  padding: 0 16px;
   text-align: center;
   vertical-align: middle;
   font-size: 18px;
   width: 300px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 48px;
-  letter-spacing: 0.5px;
-  white-space: nowrap;
-  background-color: transparent;
+  letter-spacing: 0.1px;
+  white-space: wrap;
   border-radius: 8px;
   cursor: pointer;
-  box-sizing: border-box; }
+ }
 button:hover,
 .button:focus {
   color: #333;
@@ -77,36 +75,20 @@ button:hover,
 /* Brand Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+/* Default (this is great for your own brand color!) */
+.button.button-default {
+  color: #FFFFFF;
+  background-color: #0085FF }
+.button.button-default:hover,
+.button.button-default:focus {
+  filter: brightness(90%) }
+
 /* Discord */
 .button.button-discord {
   color: #FFFFFF;
-  background-color: #7289DA }
+  background-color: #5865F2 }
 .button.button-discord:hover,
 .button.button-discord:focus {
-  filter: brightness(90%) }
-
-/* Facebook */
-.button.button-facebook {
-  color: #FFFFFF;
-  background-color: #1877f2 }
-.button.button-facebook:hover,
-.button.button-facebook:focus {
-  filter: brightness(90%) }
-
-/* Figma */
-.button.button-figma {
-  color: #FFFFFF;
-  background-color: #131313 }
-.button.button-figma:hover,
-.button.button-figma:focus {
-  filter: brightness(90%) }
-
-/* Github */
-.button.button-github {
-  color: #FFFFFF;
-  background-color: #24292e }
-.button.button-github:hover,
-.button.button-github:focus {
   filter: brightness(90%) }
 
 /* Devto */
@@ -117,12 +99,52 @@ button:hover,
 .button.button-devto:focus {
   filter: brightness(90%) }
 
+/* Facebook */
+.button.button-facebook {
+  color: #FFFFFF;
+  background-color: #1877f2 }
+.button.button-facebook:hover,
+.button.button-facebook:focus {
+  filter: brightness(90%) }
+
+/* Facebook Messenger */
+.button.button-messenger {
+  color: #FFFFFF;
+  background-image: linear-gradient(25deg,#0099FF, #5F5DFF,#A033FF, #C740CC, #FF5280, #FF7061) }
+.button.button-messenger:hover,
+.button.button-messenger:focus {
+  filter: brightness(90%) }
+
+/* Figma */
+.button.button-figma {
+  color: #FFFFFF;
+  background-color: #000000 }
+.button.button-figma:hover,
+.button.button-figma:focus {
+  filter: brightness(90%) }
+
+/* Github */
+.button.button-github {
+  color: #FFFFFF;
+  background-color: #000000 }
+.button.button-github:hover,
+.button.button-github:focus {
+  filter: brightness(90%) }
+
+/* Gitlab */
+.button.button-gitlab {
+  color: #ffffff;
+  background-color: #6151b2 }
+.button.button-gitlab:hover,
+.button.button-gitlab:focus {
+  filter: brightness(90%) }
+
 /* Goodreads */
 .button.button-goodreads {
-  color: #553B08;
+  color: #333333;
   background-color: #F3F1E6 }
-.button.button-youtube:hover,
-.button.button-youtube:focus {
+.button.button-goodreads:hover,
+.button.button-goodreads:focus {
   filter: brightness(90%) }
 
 /* Instagram */
@@ -136,7 +158,7 @@ button:hover,
 /* Kit */
 .button.button-kit {
   color: #FFFFFF;
-  background-color: #10c694 }
+  background-color: #000000 }
 .button.button-kit:hover,
 .button.button-kit:focus {
   filter: brightness(90%) }
@@ -144,55 +166,50 @@ button:hover,
 /* LinkedIn */
 .button.button-linkedin {
   color: #FFFFFF;
-  background-color: #0A66C2 }
+  background-color: #2867B2 }
 .button.button-linkedin:hover,
 .button.button-linkedin:focus {
   filter: brightness(90%) }
 
-/* PayPal */
-.button.button-paypal {
+/* Mastodon */
+.button.button-mastodon {
   color: #FFFFFF;
-  background-color: #0079C1 }
-.button.button-paypal:hover,
-.button.button-paypal:focus {
+  background-color: #1F232B }
+.button.button-mastodon:hover,
+.button.button-mastodon:focus {
   filter: brightness(90%) }
 
 /* Medium */
 .button.button-medium {
-  color: #000000;
-  background-color: #E8F3EC }
+  color: #FFFFFF;
+  background-color: #000000 }
 .button.button-medium:hover,
 .button.button-medium:focus {
   filter: brightness(90%) }
 
-/* Gmail */
-.button.button-gmail {
-  color: #000000;
-  background-color: #FFFFFF }
-.button.button-gmail:hover,
-.button.button-gmail:focus {
-  filter: brightness(90%) }
-
-/* Mixer */
-.button.button-mixer {
-  color: #FFFFFF;
-  background-color: #212c3d }
-.button.button-mixer:hover,
-.button.button-mixer:focus {
-  filter: brightness(90%) }
-
 /* Pinterest */
 .button.button-pinterest {
-  color: #FFFFFF;
-  background-color: #E60023 }
+  color: #000000;
+  background-color: #FFE2EB }
 .button.button-pinterest:hover,
 .button.button-pinterest:focus {
   filter: brightness(90%) }
 
+/* Producthunt */
+.button.button-producthunt {
+  color: #DA552F;
+  border-style: solid;
+  border-color: #DA552F;
+  border-width: 2px;
+  background-color: #FFFFFF }
+.button.button-producthunt:hover,
+.button.button-producthunt:focus {
+  filter: brightness(90%) }
+
 /* Reddit */
 .button.button-reddit {
-  color: #FFFFFF;
-  background-color: #FF4500 }
+  color: #000000;
+  background-color: #D7DFE2 }
 .button.button-reddit:hover,
 .button.button-reddit:focus {
   filter: brightness(90%) }
@@ -200,18 +217,10 @@ button:hover,
 /* Skoob */
 .button.button-skoob {
   color: #FFFFFF;
-  background-color: #5882BE }
-.button.button-youtube:hover,
-.button.button-youtube:focus {
+  background-color: #3189C8 }
+.button.button-skoob:hover,
+.button.button-skoob:focus {
   filter: brightness(90%) }
-
-/* Rocketseat */
-.button.button-rocketseat {
-  color: #FFFFFF;
-  background-color: #8257E6 }
-.button.button-rocketseat:hover,
-.button.button-rocketseat:focus {
-  filter: brightness(90%) }  
 
 /* Snapchat */
 .button.button-snapchat {
@@ -229,18 +238,10 @@ button:hover,
 .button.button-soundcloud:focus {
   filter: brightness(90%) }
 
-/* Spectrum */
-.button.button-spectrum {
-  color: #FFFFFF;
-  background-color: #7b16ff }
-.button.button-spectrum:hover,
-.button.button-spectrum:focus {
-  filter: brightness(90%) }
-
 /* Spotify */
 .button.button-spotify {
   color: #FFFFFF;
-  background-color: #1DB954 }
+  background-color: #000000 }
 .button.button-spotify:hover,
 .button.button-spotify:focus {
   filter: brightness(90%) }
@@ -259,6 +260,14 @@ button:hover,
   background-color: #3faee8 }
 .button.button-telegram:hover,
 .button.button-telegram:focus {
+  filter: brightness(90%) }
+
+/* TikTok */
+.button.button-tiktok {
+  color: #FFFFFF;
+  background-color: #000000 }
+.button.button-tiktok:hover,
+.button.button-tiktok:focus {
   filter: brightness(90%) }
 
 /* Tumblr */
@@ -285,11 +294,50 @@ button:hover,
 .button.button-twitter:focus {
   filter: brightness(90%) }
 
+/* Vimeo */
+.button.button-vimeo {
+  color: #FFFFFF;
+  background-color: #1ab7ea }
+.button.button-vimeo:hover,
+.button.button-vimeo:focus {
+  filter: brightness(90%) }
+
+/* PayPal */
+.button.button-paypal {
+  color: #FFFFFF;
+  background-color: #003087 }
+.button.button-paypal:hover,
+.button.button-paypal:focus {
+  filter: brightness(90%) }
+
 /* YouTube */
 .button.button-youtube {
   color: #FFFFFF;
-  background-color: #FF0000 }
+  background-color:  #000000 }
 .button.button-youtube:hover,
 .button.button-youtube:focus {
   filter: brightness(90%) }
 
+/* WhatsApp */
+.button.button-whatsapp {
+  color: #FFFFFF;
+  background-color:  #455A64 }
+.button.button-whatsapp:hover,
+.button.button-whatsapp:focus {
+  filter: brightness(90%) }
+
+/* Wordpress */
+.button.button-wordpress {
+  color: #FFFFFF;
+  background-color: #21759b }
+.button.button-wordpress:hover,
+.button.button-wordpress:focus {
+  filter: brightness(90%) }
+
+/* Xing */
+.button.button-xing {
+  color: #FFFFFF;
+  background-color: #026466 }
+.button.button-xing:hover,
+.button.button-xing:focus {
+  filter: brightness(90%) }
