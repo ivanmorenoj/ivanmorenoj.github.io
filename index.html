@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-D7W8B71FRT"></script>
@@ -10,7 +11,6 @@
 
     gtag('config', 'G-D7W8B71FRT');
   </script>
-
 
   <!-- Page Information
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -23,21 +23,28 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800&display=swap" rel="stylesheet">
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton-dark.css">
-  <link rel="stylesheet" href="css/brands.css">
+
+    <!-- Themes:
+            Auto:   css/skeleton-auto.css
+            Light:  css/skeleton-light.css
+            Dark:   css/skeleton-dark.css
+     -->
+    <link rel="stylesheet" href="css/skeleton-auto.css">
+
+    <!-- Brand Styles -->
+    <link rel="stylesheet" href="css/brands.css">
+
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/x-icon" href="cv/src/user_icon.svg">
 
 </head>
+
 <body>
 
   <!-- Primary Page Layout
@@ -45,67 +52,108 @@
   <div class="container">
     <div class="row">
       <div class="column" style="margin-top: 10%">
-        <!-- Your Image Here -->
-        <img src="img/profile_photo.jpg" srcset="img/profile_photo.jpg 2x" class="avatar">
 
-        <!-- Your Name -->
-        <h1><a style="text-decoration:none;color:#FFFFFF;" title="Curriculum Vitae" href="cv/index.html">Iván Moreno</a></h1>
+        <!-- 
+
+          ## Getting Started with LittleLink
+
+          This page has been built with every pre-designed button available in LittleLink by default. You can rearrange and delete as needed.
+
+          You can add your own brand or others brands you may need in the `css/brands.css` file. 
+
+          You can add custom icons to `images/icons/...`. It is recommended to use a 24x24 .SVG.
+
+          Edit the "Your Image Here" section to add your own personal branding, like a picture of yourself or your brand logo!
+
+          Edit the "Title" section to change the page heading. You can use something like your name, your social handle, or your brand name.
+
+          Edit the "Short Bio" section tell users about yourself or your brand.
+
+        -->
+
+        <!-- Your Image Here -->
+        <img src="images/profile_photo.jpg" srcset="images/profile_photo.jpg 2x" class="avatar">
+
+        <!-- Title -->
+        <h1 role="heading">Iván Moreno</h1>
+
 
         <!-- Short Bio -->
         <p>
-        <strong>SRE/DevOps Engineer</strong><br>
+        <strong>SRE/DevSecOps Engineer</strong><br>
         <em>
         MSc in Telecommunications Engineering<br>
         Communications and Electronics Engineer<br>
         Tech Hobbyist, Biker
         </em>
         </p>
-        
-        <!-- Replace # with your profile URL. Delete whatever you don't need & create your own brand styles in css/brands.css -->  
-        <!-- Email -->
-        <a class="button button-default" href="mailto:info@ivanmoreno.dev" target="_blank" rel="noopener"><img class="icon" src="icons/email.svg" alt="Email Icon">info@ivanmoreno.dev</a>
-          <br>
 
-          <!-- WhatsApp -->
-        <a class="button button-whatsapp" href="https://bit.ly/3uPwAsF" target="_blank" rel="noopener"><img class="icon" src="icons/whatsapp.svg">WhatsApp</a>
-        <br> 
+        <!--
+
+          ## Breaking down <a> attributes:
+          
+          1.) class="button button-default" | The first "button" here is telling this <a> tag that it should make this element a button and applies the default styling in `css/brands.css`.
+          The second portion, button-default, is declaring the specific brand style you would like to apply. Here we're applying the "default" style and color.
+          If you want to make this button to use the brand colors for Discord, just change "button-default" to "button-discord". Brands are found in `css/brands.css`. You can always edit & add your own there.
+
+          2.) Replace the # in href="#" with the desired target URL for the button.
+
+          3.) target="_blank" | This attribute opens links in a new tab. Remove this attribute to prevent links from opening in a new tab.
+
+          4.) rel="noopener" | This attribute instructs the browser to navigate to the target resource without granting the new browsing context access to the document that opened it.
+          This is especially useful when opening untrusted links. https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types/noopener
+
+          5.) role="button" | The button role identifies an element as a button to assistive technology such as screen readers.
+
+          ## Breaking down the <img> attributes:
+          
+          1.) class="icon" | This class is telling the <img> tag that it should use the styling for icons found in `css/brands.css`.
+
+          2.) src="images/icons/[icon-name].svg" | This defines the icon you would like to display from the 'images/icons/' folder. For example, you can change this to src="images/icons/discord.svg" to use the Discord icon.
+          Add your own 24x24 icons to the "icons" folder to reference them. We recommend providing a SVG.
+
+          3.) alt="" | Since the text at the end of the snippet, "..>[Button Text]</a><br>", explains what the button is, we use "alt=""" to nullify the icon annoucement from the accessibility tree. 
+          This can improve the experience for assistive technology users by hiding what is essentially duplicated
+
+        -->
+
+        
+        <!-- Generic Email -->
+        <a class="button button-default" href="mailto:info@ivanmoreno.dev" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/generic-email-alt.svg" alt="">info@ivanmoreno.dev</a><br>
+
+        <!-- WhatsApp -->
+        <a class="button button-whatsapp" href="https://bit.ly/3uPwAsF" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/whatsapp.svg" alt="">WhatsApp</a><br>
 
         <!-- LinkedIn -->
-        <a class="button button-linkedin" href="https://linkedin.com/in/ivanmorenoj" target="_blank" rel="noopener"><img class="icon" src="icons/linkedin.svg">LinkedIn</a>
-          <br>
+        <a class="button button-linked" href="https://linkedin.com/in/ivanmorenoj" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/linkedin.svg" alt="">LinkedIn</a><br>
 
-        <!-- Github -->
-        <a class="button button-github" href="https://github.com/ivanmorenoj" target="_blank" rel="noopener"><img class="icon" src="icons/github.svg">Github</a>
-          <br>
-        
+        <!-- GitHub -->
+        <a class="button button-github" href="https://github.com/ivanmorenoj" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/github.svg" alt="">GitHub</a><br>
+
         <!-- PayPal -->
-        <a class="button button-paypal" href="https://bit.ly/3DaABui" target="_blank" rel="noopener"><img class="icon" src="icons/paypal.svg">PayPal</a>
-          <br> 
+        <a class="button button-paypal" href="https://bit.ly/3DaABui" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/paypal.svg" alt="">PayPal</a><br>
 
-        <!-- Devto -->
-        <a class="button button-devto" href="https://dev.to/ivanmoreno" target="_blank" rel="noopener"><img class="icon" src="icons/dev-to.svg">DEV</a>
-          <br> 
+        <!-- Dev.to -->
+        <a class="button button-dev-to" href="https://dev.to/ivanmoreno" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/dev-to.svg" alt="">Dev.to</a><br>
 
         <!-- Medium -->
-        <a class="button button-medium" href="https://ivanmorenoj.medium.com" target="_blank" rel="noopener"><img class="icon" src="icons/medium.svg">Medium</a>
-          <br> 
+        <a class="button button-medium" href="https://ivanmorenoj.medium.com" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/medium.svg" alt="">Medium</a><br>
 
         <!-- Twitter -->
-        <a class="button button-twitter" href="https://twitter.com/ivanmorenoj_" target="_blank" rel="noopener"><img class="icon" src="icons/twitter.svg">Twitter</a>
-          <br>
+        <a class="button button-twit" href="https://twitter.com/ivanmorenoj_" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/twitter.svg" alt="">Twitter</a><br>
 
         <!-- Instagram -->
-        <a class="button button-instagram" href="https://instagram.com/ivanmorenoj_" target="_blank" rel="noopener"><img class="icon" src="icons/instagram.svg">Instagram</a>
-          <br>
+        <a class="button button-instagram" href="https://instagram.com/ivanmorenoj_" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/instagram.svg" alt="">Instagram</a><br>
 
         <!-- YouTube -->
-        <a class="button button-youtube" href="https://www.youtube.com/@ivanmorenoj" target="_blank" rel="noopener"><img class="icon" src="icons/youtube.svg">YouTube</a>
+        <a class="button button-yt" href="https://www.youtube.com/@ivanmorenoj" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/youtube.svg" alt="">YouTube</a><br>        
 
       </div>
     </div>
   </div>
 
-<!-- End Document
+  <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
+
 </html>
